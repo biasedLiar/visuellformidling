@@ -1,7 +1,7 @@
 from manim import *
 
 
-class CreateCircle(Scene):
+class ProjectVideo(Scene):
     def transform(self):
         a = Circle()
         b = Square()
@@ -19,7 +19,7 @@ class CreateCircle(Scene):
         self.play(FadeOut(c))
 
     def animate_path(self, points):
-        person = Star(outer_radius=0.2, color=BLACK).set_fill(YELLOW, opacity=1)
+        person = Star(outer_radius=0.2, color=BLACK).set_fill(YELLOW, opacity=1).
         #TODO move star to front
         person.move_to(points[0])
         self.add(person)
